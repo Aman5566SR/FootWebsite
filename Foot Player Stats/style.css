@@ -1,0 +1,204 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #007BFF; /* Blue background */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding around the content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Change color on hover (gold) */
+}
+
+.search-container {
+    display: flex; /* Use flexbox for the search bar */
+    align-items: center; /* Center items vertically */
+}
+
+.search-container input[type="text"] {
+    padding: 5px; /* Padding inside the input */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.search-container button {
+    padding: 5px 10px; /* Padding for the button */
+    margin-left: 5px; /* Space between input and button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Blue background to match navbar */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Move the button up */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.search-container button:active {
+    transform: translateY(0); /* Reset position when button is clicked */
+    box-shadow: none; /* Remove shadow on click */
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.line-break::before {
+    content: "\A";
+    white-space: pre;
+    display: block;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    transition: transform 0.2s;
+}
+
+.social-icon img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.about-us {
+    text-align: center; /* Center the link */
+    margin-top: 40px; /* Space above the About Us link */
+}
+
+.about-link {
+    color: blue; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+    transition: color 0.2s; /* Smooth color transition */
+}
+
+.about-link:hover {
+    color: darkblue; /* Change color on hover */
+}
